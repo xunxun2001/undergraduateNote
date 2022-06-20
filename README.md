@@ -19,3 +19,5 @@
 ## Spark入门（厦大mooc）
 
 ### 笔记
+
+[Chap2 Scala语言基础](./大数据系统开发/Chap2.md)

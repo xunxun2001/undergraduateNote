@@ -243,6 +243,7 @@ myMatrix(0)(1)//返回第一行第二列的元素
 ![picture 2](../assets/331957c979bb531f82f2002e943d8c921bc9d646244b44a5a361f3d83210d8dc.png)  
 
 3. 容器（`Collection`）
+
 ![picture 3](../assets/b735dbc943f008a64936c0e3346e915458f779573b76f1865881572fe8687bea.png)  
 
 - `Scala`用了三个包来组织容器类，分别是`scala.collection` 、`scala.collection.mutable`和`scala.collection.immutable`
