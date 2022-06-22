@@ -568,10 +568,173 @@ Brand:Benz, Price:1500000, do you want it?
 ## 4. 函数式编程基础
 
 ### 4.1 函数定义与使用
+![picture 1](../assets/42d311f114da0cd94da643b0c33c9098dbcdedbadf5a25c361a2ffe671a5ce68.png)  
+
+![picture 2](../assets/0e5c5a0a2c682572153ec4a2233a78bc8aabc58ac1121547a60bf5d90b630383.png)  
+
+- 函数字面量可以体现函数式编程的核心理念
+  - 函数是“头等公民”，可以像任何其他数据类型一样被传递和操作
+    - 我们就可以**像定义变量那样去定义一个函数**
+    - 就像变量的“**类型**”和“**值**”是分开的两个概念一样，函数式编程中，函数的“类型”和“值”也成为两个分开的概念，函数的“值”，就是“**函数字面量**”
+
+
+![picture 3](../assets/4977306f24252139d7aae8e9784638a64054654628088247c04ed8573551cee2.png)  
+![picture 4](../assets/16f0f7a466d44a166ab46e8cd985aa25ef761355363166e6dc83ce0bb1fe4de9.png)  
+
+- 当函数的每个参数在函数字面量内仅出现一次，可以省略`=>`并用下划线`_`作为参数的占位符来简化函数字面量的表示
+- 第一个下划线代表第一个参数，第二个下划线代表第二个参数，以此类推
+
+
+
 
 ### 4.2 高阶函数
+- 函数里面的参数还是函数
+  
+> 假设需要分别计算从一个整数到另一个整数的“连加和”、“平方和”以及“2的幂次和”
+
+`不采用高阶函数.scala`
+```scala
+def powerOfTwo(x: Int): Int = {if(x == 0) 1 else 2 * powerOfTwo(x-1)}
+
+def sumInts(a: Int, b: Int): Int = {
+		if(a > b) 0 else a + sumInts(a + 1, b)
+}
+def sumSquares(a: Int, b: Int): Int = {
+		if(a > b) 0 else a*a + sumSquares(a + 1, b)
+}
+def sumPowersOfTwo(a: Int, b: Int): Int = {
+		if(a > b) 0 else powerOfTwo(a) + sumPowersOfTwo(a+1, b)
+}
+
+```
+`采用高阶函数.scala`
+
+```scala
+def sum(f: Int => Int, a: Int, b: Int):Int = {
+	if(a > b) 0 else f(a) + sum(f, a+1, b)
+}
+
+val a = sum(x=>x,1,5) //直接传入一个匿名函数
+val b = sum(x=>x*x,1,5) //直接传入另一个匿名函数
+
+val c = sum(powerOfTwo,1,5) //传入一个已经定义好的方法
+```
 
 ### 4.3 针对容器的操作
+1. 遍历操作
+
+- `foreach`
+```SCALA
+val university = Map("XMU" ->"Xiamen University", "THU" ->"Tsinghua University","PKU"->"Peking University")
+
+university foreach{kv => println(kv._1+":"+kv._2)}
+//简化写法
+university foreach{x=>x match {case (k,v) => println(k+":"+v)}}
+//更加简化
+university foreach{case (k,v) => println(k+":"+v)}
+
+```
+
+2. 映射操作
+
+- `map`方法（**一对一**映射）
+  - 返回一个与原容器类型大小都相同的新容器，只不过元素的类型可能不同
+```SCALA
+val books =List("Hadoop","Hive","HDFS")
+
+//toUpperCase方法将一个字符串中的每个字母都变成大写字母
+books.map(s => s.toUpperCase)
+//res: List[String] = List(HADOOP, HIVE, HDFS)
+
+books.map(s => s.length) //将字符串映射到它的长度
+//res:List[Int] = List(6, 4, 4) ————————>新列表的元素类型为Int
+```
+
+- `flatMap`方法（**一对多**映射）
+  - 对每个元素都会返回一个容器（而不是一个元素），把生成的多个容器“**拍扁**”成为一个容器并返回
+
+```SCALA
+books flatMap (s => s.toList)
+//res: List[Char] = List(H, a, d, o, o, p, H, i, v, e, H, D, F, S)
+
+```
+
+3. 过滤操作
+
+- `filter`方法
+  - 接受一个返回布尔值的函数`f`作为参数，并将`f`作用到每个元素上，将`f`返回真值的元素组成一个新容器返回
+```SCALA
+val university = Map("XMU" ->"Xiamen University", "THU" ->"Tsinghua University","PKU"->"Peking University","XMUT"->"Xiamen University of Technology")
+
+///过滤出值中包含“Xiamen”的元素，contains为String的方法
+val xmus = university filter {kv => kv._2 contains "Xiamen"}
+//scala.collection.immutable.Map[String,String] = Map(XMU -> Xiamen University, XMUT -> Xiamen University of Technology)
+
+val l=List(1,2,3,4,5,6) filter {_%2==0}
+//l:List[Int] = List(2, 4, 6)
+```
+4. 规约操作
+
+- 规约操作是对容器元素进行两两运算，将其“规约”为一个值
+- `reduce`方法
+  - 接受一个二元函数`f`作为参数
+    - 首先将`f`作用在某两个元素上并返回一个值
+    - 然后再将`f`作用在**上一个返回值**和容器的下一个元素上，再返回一个值
+    - 依此类推，最后容器中的所有值会被规约为一个值
+- `reduceLeft`和`reduceRight`
+  - 前者从左到右进行遍历，后者从右到左进行遍历
+
+![picture 5](../assets/b5154e5b948d19df961cfb6dac7886851aa8ef0c089b2a817854f67d64d79121.png)  
+
+```SCALA
+val list =List(1,2,3,4,5)
+
+list map (_.toString) reduce ((x,y)=>s"f($x,$y)")
+//String = f(f(f(f(1,2),3),4),5) 
+//f表示传入reduce的二元函数
+```
+
+
+- `fold`方法
+  - 比起`reduce`，提供了初始值
+  - 一个双参数列表的函数，从提供的初始值开始规约
+    - 第一个参数列表接受一个规约的初始值，第二个参数列表接受与reduce中一样的二元函数参数
+- `foldLeft`和`foldRight`
+  - 前者从左到右进行遍历，后者从右到左进行遍历
+
+![picture 6](../assets/7c69c11837e96a2f3703a4d1161adc4dd5848cfe2d601bcac9e579bea4c05e1e.png)  
+
+
+
 
 ### 4.4 函数式编程实例WordCount
 
+```SCALA
+	import java.io.File
+	import scala.io.Source
+	import collection.mutable.Map
+
+	object WordCount {
+		def main(args: Array[String]) {
+
+			val dirfile=new File("testfiles")
+			val files  = dirfile.listFiles
+			val results = Map.empty[String,Int]
+
+			for(file <-files) {
+				val data= Source.fromFile(file)
+
+				val strs =data.getLines.flatMap{s =>s.split(" ")}
+
+				strs foreach { word =>
+					if (results.contains(word))
+					results(word)+=1 else  results(word)=1
+					}
+
+				}
+
+			results foreach{case (k,v) => println(s"$k:$v")}
+		}
+	}
+
+```
