@@ -6,3 +6,5 @@
 # 3.指令寻址
 
 # 4.CISC和RISC
+> - `RISC`：`reduced instruction set computer`,既**精简**指令系统
+> - `CISC`：`Complex Instruction Set Computer`，既**复杂**指令系统
