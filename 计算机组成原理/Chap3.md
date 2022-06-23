@@ -50,7 +50,7 @@
 >   - 快擦除读写存储器`Flash Memory`
 >     - 重复写入、读出
 
-# 2.存储容量的扩展
+# 2. 存储容量的扩展
 
 ![picture 7](../assets/9bf58b72b5a6b79f617bd9d99a9c9a577850ba4235711490f0e647fcd2245bed.png)  
 
@@ -61,18 +61,29 @@
    - 数据总线
    - 地址总线
 
-## 2.2 
+## 2.2 位扩展（位扩并）
+![picture 20](../assets/a6077193fff4d1014cf871d17d12fe25699d7ea562109ad90907c6970689708e.png)  
+
+## 2.3 字扩展——存储芯片地址分配和片选（字扩串）
+
+![picture 21](../assets/cd60f7398922afe4f219f97f1e9396a64305bdf187b1e97ca0bea2199464a1f1.png)  
+
+
+![picture 23](../assets/4fa75d16f3c41ea7a5ae5d36fc13fa80dc7b05a92a1335ddb03d5faf73a333bf.png)  
+
+![picture 22](../assets/3679b56e7385919b84459b716b14e882ecb7ce67549d0fcd000fa6f60f873b5d.png)  
+
+## 2.4 字位同时扩展
+
+![picture 24](../assets/1ec7014013d6d473e7a63e50d4ea8d2c837aa1e485d73a4fbde9bc104a37ced0.png)  
 
 
 
+# 3. Cache
 
 
 
-# 3.RAID的概念、特点以及分类
-
-# 4.Cache
-
-# 5.补充概念
+# 4. 补充概念
 
 ## 5.1 虚拟存储的概念
 
@@ -98,4 +109,11 @@
 
 ![picture 6](../assets/290cd86e9815f7b39e9659b3ff7d2d023ea250bbe41208e6848688bea3d2953f.png)  
 
+## 5.6 多模块存储器（空间并行）与存储周期
 
+- 存储周期
+  - 存储器连续启动两次独立的访问操作所需的最小间隔时间
+  - `存取周期=存取时间+复原时间`
+
+- 多模块存储器（空间并行）
+![picture 32](../assets/25f85b1f1907f6c8a116eeac35822326a35620d1d43a87c8bc1428485a88e708.png)  

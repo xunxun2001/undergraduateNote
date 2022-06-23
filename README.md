@@ -19,6 +19,8 @@
 
 [Chap5 CPU与微指令](./计算机组成原理/Chap5.md)
 
+[Chap7 外设](./计算机组成原理/Chap7.md)
+
 # 大数据系统开发
 
 ## Spark入门（厦大mooc）
