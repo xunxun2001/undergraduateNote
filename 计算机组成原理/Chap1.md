@@ -95,22 +95,38 @@
 
 # 习题
 
-## 题目
 
-### 1.1
+![picture 3](../assets/ba17f9cce5517d9187591f2431cfe35550dd1433023c781085b2bf334d823f28.png)  
 
-![picture 1](../assets/f1bd15668dfa87c8a71cf7d75b04c58b7379fc56c1003fe38b0886d7896e18c1.png)  
-![picture 2](../assets/49e778abb836486a8a273c5645857a8f9096d10787608a0a9822cb39f6dbe273.png)  
+![picture 5](../assets/7856ba97e1c9fc18fb030ffc420c865d90fba07609bc3bb6ec5faf96087316d0.png)  
 
-### 1.2
 
-## 答案
+![picture 1](../assets/e3da507ef7cef603de0e7462317da68d1962b17f92a9382eed475c3eaecc13e5.png)  
 
-### 1.1
+![picture 6](../assets/302fb68ec6ac247f9e61a688f8b326b1cb795cd1e39c2a6f734aa4565991bdcd.png)  
 
-![picture 3](../assets/19f81dc2c31fab954545253f48e8f116647805b9ee7bd52338a713d104a74f92.png)  
-![picture 4](../assets/267ceba88446207f1904f8cfaf70b629426e0193ed2c3e0e99f376d8302d8bf6.png)  
+![picture 7](../assets/77bd0846d15f2d9dbf95cd6fa47cb62938f28b3eaf5d5f95b62e50085518a57f.png)  
 
-### 1.2
+![picture 8](../assets/019259d32a57029dff3bb0e0982bbb6b332b44aa823529e137f22e13d73644a1.png)  
 
-![picture 9](../assets/1e28dab20536b479296ebaf52440774e35ed71aad23a8616244f40a66efab40d.png)  
+
+
+![picture 9](../assets/e537ef6171d896770cacdb8a5ff553c1efcdfda0b5dcadebf3fb2f981d5bb965.png)  
+
+![picture 13](../assets/02246b265f62fa78d7944918cb306a48854c35af74844d0924f28448712476b3.png)  
+
+
+![picture 11](../assets/56010080fca801e2b87fa8715b3cc54b25d0c0c2bd7078f03ada45cb9c87d3e7.png)  
+![picture 12](../assets/2ab0d84dd3e0cb72097dacb85ea007adea0f21740e4c8e92220a179f15beea7b.png)  
+
+
+
+
+![picture 10](../assets/6ab650092cbe41804bd4c24205398cbc20dcd6535ac965cf0040cf78f310fef7.png)  
+
+![picture 14](../assets/90a06e4c5897615aac5b4f6e28437285aa0208940a93355ef953b9c1b7b8edba.png)  
+
+![picture 15](../assets/60af599fd6bbec84e0e28afd68aa4d8066ddca339869534daa95148607258d95.png)  
+
+ - 存储系统：主存、辅存、Cache
+ - 计算机硬件链接方式：总线
