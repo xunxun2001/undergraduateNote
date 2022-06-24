@@ -81,17 +81,50 @@
 
 # 3. Cache
 
+## 3.1 基本原理
+![picture 1](../assets/8f5d55fa52d242f692dabd72385079244ce558731b29b998b61e9bf195c8d1a1.png)  
+
+![picture 2](../assets/db406dc8f50e62208cd8204634b889b162bc74df25dcc38f45d0923e69d09170.png)  
+
+
+## 3.2 `Cache`映射
+
+
+![picture 3](../assets/8f101fc6c2465bb243552365b510345ef356d75e154785d3d779a1c0351e6b5d.png)  
+
+![picture 4](../assets/2d0c21b2a40946486beafd907669793e21e5b2b6a487905a6e5000f4bec9d283.png)  
+
+## 3.3 `Cache`替换算法
+
+- 直接映射不需要考虑替换算法
+
+![picture 6](../assets/6bcd65fb1dade7b51bc6e4fda3d3fb70ba050b340347f970e35dda8ec79cd612.png)  
+
+![picture 7](../assets/90abb8a4d5a979b3f3bb8c16851bfc6e49c3cc6059ac8f3fe1fd4812932f9047.png)  
+
+
+![picture 8](../assets/2df373176f421e9d28a60ee183e1539983ef810beea057626f5bd7c823d6843d.png)  
+
+![picture 9](../assets/a0d3dd9fa0002b1ab6d1c8fb16ec996b1ab2094c6ece235184fbcfe35af7455b.png)  
+
+![picture 10](../assets/adb8ea0c761d78dd44a9c99a01bae81834531c6d05aa0284bd1e63da3f6918ef.png)  
+
+
+## 3.4 Cache写策略——数据一致性问题
+
+ ![picture 12](../assets/ef90ceaa17c1dfebcd17f918e5499d3db19131e7bd78575c09f264f6e112e35a.png)  
+
 
 
 # 4. 补充概念
 
-## 5.1 虚拟存储的概念
+## 4.1 虚拟存储的概念
 
-## 5.2 大端和小端
+## 4.2 大端和小端
 >-  **Little**-Endian就是**低位字节排放在内存的低地址端**，高位字节排放在内存的高地址端。
 >-  **Big**-Endian就是**高位字节排放在内存的低地址端**，低位字节排放在内存的高地址端。
 
-## 5.3 DRAM刷新方法
+## 4.3 DRAM刷新方法
 
 ![picture 3](../assets/86b5e12d1d2a64888b8c3438c25da9520bce25aa96ca51954ce598ffa6f803db.png)  
 
@@ -100,16 +133,16 @@
 ![picture 4](../assets/6d2b1084e9b8eb357e9f6178299123bab95c5d6f8be3416329424a9f99f1280b.png)  
 
 
-## 5.4 RAM读写周期
+## 4.4 RAM读写周期
 
 ![picture 5](../assets/8343556ab4e65072630155972283568470eb5a2b6fb26b2db4f7d12108f13cb3.png)  
 
 
-## 5.5 存储器性能指标
+## 4.5 存储器性能指标
 
 ![picture 6](../assets/290cd86e9815f7b39e9659b3ff7d2d023ea250bbe41208e6848688bea3d2953f.png)  
 
-## 5.6 多模块存储器（空间并行）与存储周期
+## 4.6 多模块存储器（空间并行）与存储周期
 
 - 存储周期
   - 存储器连续启动两次独立的访问操作所需的最小间隔时间
