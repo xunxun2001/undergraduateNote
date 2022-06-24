@@ -130,3 +130,5 @@
 
  - 存储系统：主存、辅存、Cache
  - 计算机硬件链接方式：总线
+
+![picture 19](../assets/6c50b059439fbb2dbb61e240aea1dd7ade38c260ead2a01cbb3df898bba7ee47.png)  

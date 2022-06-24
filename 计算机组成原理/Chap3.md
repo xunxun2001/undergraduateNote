@@ -92,7 +92,8 @@
 
 ![picture 3](../assets/8f101fc6c2465bb243552365b510345ef356d75e154785d3d779a1c0351e6b5d.png)  
 
-![picture 4](../assets/2d0c21b2a40946486beafd907669793e21e5b2b6a487905a6e5000f4bec9d283.png)  
+![picture 8](../assets/4b2fb8a2592247e9f1b67972127b5c9def66f218733b5f34318047d2a0cc2122.png)  
+
 
 ## 3.3 `Cache`替换算法
 
@@ -156,3 +157,25 @@
 
 - 多模块存储器（空间并行）
 ![picture 32](../assets/25f85b1f1907f6c8a116eeac35822326a35620d1d43a87c8bc1428485a88e708.png)  
+
+
+# 习题
+
+![picture 4](../assets/a6576ab7bf0dea7dce91d99384b511f83fbb50bd097c5cb63a6daaf763b8b4d0.png)  
+
+![picture 5](../assets/1d16a9210067ea161c66f7295896b68b9d376841b30b883ae500ed8dfa2a16e0.png)  
+
+![picture 6](../assets/49c9902a08f672e968ea500403b510e9ef7be2752644f275d8ff4999e5c643d7.png)  
+
+![picture 7](../assets/b165122ea5a820e44e2cdb4577f28e0276414cadc9f841b963d7e6989c31091b.png)  
+
+![picture 9](../assets/52916e1179527fb329b5cd2975c96b3b50317dcf61fa75660ea88861e0392ce5.png)  
+
+![picture 14](../assets/656a6fdc188c1375f8926c29d9262101a4cdde57715e105a1538d88c9ed3316f.png)  
+![picture 12](../assets/cb08fa198b41d17cb7e5f997424ef306e52e3fc4e195513e9a57481f5e85da13.png)  
+![picture 13](../assets/9621236816a67a9bf633f25e063b6341c4bcd23ab8ab6d55dfc27bb5218a40f2.png)  
+
+
+![picture 15](../assets/0a705afa08d44da043a2a6714d6a4a68da41bfec621ca669ea729eb3fdfeafcd.png)  
+![picture 16](../assets/1b8927dad397c3cfc4695dc3ca0ca0230c4557177b03c1a4dc8aed42e7e43e94.png)  
+![picture 17](../assets/18ec1aae0e6b35e2d361dacbfc567e945ae2af5eaf6017c11e7bb230c210fac0.png)  

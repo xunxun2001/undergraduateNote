@@ -13,11 +13,15 @@
 
 [Chap1 计算机系统发展](./计算机组成原理/Chap1.md)
 
+[Chap2 数码](./计算机组成原理/Chap2.md)
+
 [Chap3 存储器](./计算机组成原理/Chap3.md)
 
 [Chap4 指令系统](./计算机组成原理/Chap4.md)
 
 [Chap5 CPU与微指令](./计算机组成原理/Chap5.md)
+
+[Chap6 总线](./计算机组成原理/Chap6.md)
 
 [Chap7 外设](./计算机组成原理/Chap7.md)
 
