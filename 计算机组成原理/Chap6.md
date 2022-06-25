@@ -24,7 +24,9 @@
 
 
 # 2. 总线性能计算题
+![picture 23](../assets/fbc4fd6c87dc80e986c1f4bcf55a20ecb43259c4b6e4a5656057ca6b6043ec01.png)  
 
+![picture 24](../assets/162cabc62b0611c1979ac482107caf338ba8eeb375a851908d9d35ef40ff1ef4.png)  
 
 # 3. 总线标准
 

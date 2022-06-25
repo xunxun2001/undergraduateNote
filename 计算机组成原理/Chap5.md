@@ -266,3 +266,25 @@
 - 具有2条以上的指令流水线
 - 
 ![picture 17](../assets/734a272e30da3232b025fe4f396e5d8e00085778954802e5a872f345498f8c02.png)  
+
+
+# 习题
+
+![picture 12](../assets/d66686e1ced9462ef829bc29011434c243cc8e016774c2184643d8fbbc3eab9e.png)  
+![picture 13](../assets/be24af01ec219fb417137cbe7a6262622124c79845c53f6afadba3084b41efa2.png)  
+![picture 14](../assets/963e3b14a829041500bc758c06a19188e3574fd68dc95a8e1feae8c2bb836e3c.png)  
+![picture 15](../assets/7345e49300157062e4bd921086c755dda9101293751b44eab9bc38b7cfec58bf.png)  
+
+![picture 16](../assets/2fc1df80acda0e09ce79c7a2a3bb2d8629d6d3778f5ef6e6c4bb5f60d42a55ae.png)  
+
+![picture 17](../assets/42155715bdd993f73888913ded89558af1df4b5dc44510207ec743dc703f706c.png)  
+![picture 18](../assets/c85ed79186aa5c50a8f11db09ba0d54b8162c5f41ddf789a7f6321e4b9991f16.png)  
+
+
+![picture 19](../assets/e270b6a0de7bbdd8e96716575d5716603d949c350fb9d6f76203fbbd59d0d032.png)  
+
+
+
+![picture 20](../assets/76accdec2553e97440cb17334fbd8320e57c6ff3586429e548e7f2b1e2abae4d.png)  
+![picture 21](../assets/4acd7138eff2d2665c0549f9ced9ca7b55333c48e9c6bd36a354ea0e2f1e34e7.png)  
+![picture 22](../assets/def10f2e2539bb89efb3ee39dc409716213b0cb919b1b468940ba9b5009fbb12.png)  
