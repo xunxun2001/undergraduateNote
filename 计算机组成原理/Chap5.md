@@ -236,6 +236,7 @@
 
 ![picture 3](../assets/95e1f026277fde5cf4fe0cb0db13480ec4338a0ceb50a34afd11ede625cf3d1a.png)  
 
+![picture 6](../assets/5db7113f23785ba2a026bc437ddbdf1a3039b53d29c260f0fe9ee1383f5ba57a.png)  
 
 
 

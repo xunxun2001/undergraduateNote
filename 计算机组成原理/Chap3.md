@@ -189,3 +189,6 @@
 
 ![picture 4](../assets/764965c727c51e45fc377078f860cc73f6e95798f6c5500c89dc3658f5473a88.png)  
 ![picture 5](../assets/9b6000a8e09a3d54f2c8606f95183ac70101284d539b6735a0de7ba7c02f552a.png)  
+
+
+> - **微程序===指令>>>微指令>>>multiple 微命令 === 微操作**
