@@ -179,3 +179,13 @@
 ![picture 15](../assets/0a705afa08d44da043a2a6714d6a4a68da41bfec621ca669ea729eb3fdfeafcd.png)  
 ![picture 16](../assets/1b8927dad397c3cfc4695dc3ca0ca0230c4557177b03c1a4dc8aed42e7e43e94.png)  
 ![picture 17](../assets/18ec1aae0e6b35e2d361dacbfc567e945ae2af5eaf6017c11e7bb230c210fac0.png)  
+
+
+![picture 1](../assets/ca30605ec09433aed974f741de9d15927e5031a96701a855838f2b666d167d57.png)  
+![picture 2](../assets/45dad248c60626748982cb1f628b04e564d75cb9e65a509db06fde797d457c7a.png) 
+
+
+![picture 3](../assets/0d927580c9261e4aa514737a713641e2e423ec188be22413c82c07ca978ed1d2.png)  
+
+![picture 4](../assets/764965c727c51e45fc377078f860cc73f6e95798f6c5500c89dc3658f5473a88.png)  
+![picture 5](../assets/9b6000a8e09a3d54f2c8606f95183ac70101284d539b6735a0de7ba7c02f552a.png)  
