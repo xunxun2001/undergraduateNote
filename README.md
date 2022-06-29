@@ -9,6 +9,8 @@
 
 [Chap1 概述](./操作系统/Chap1.md)
 
+[Chap2 进程与死锁](./操作系统/Chap2.md)
+
 [Chap3 内存管理](./操作系统/Chap3.md)
 
 [Chap5 I/O原理](./操作系统/Chap1.md)

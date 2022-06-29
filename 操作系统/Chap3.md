@@ -109,7 +109,7 @@
 ![picture 18](../assets/a629fc7e0020d5753572364d33a55c375f0c693ef7cc3536a5df2380ebdabcaa.png)  
 
 
-##### 临近适应算法
+##### 循环首次适应算法
 > 空闲分区：地址递增排列
 > 
 > 循环链表
@@ -129,3 +129,35 @@
 
 
 ## 3.2 离散分配
+
+### 3.2.1 分页存储
+
+> 与固定分区技术很像，但是其分页相对于分区又很小，分页管理**不会产生外部碎片**，产生的**内部碎片也非常的小**
+
+
+![picture 1](../assets/e233e5b0e253cb79d958d68e5046183f2818cf736086235fcb4ce36628537fa3.png)  
+![picture 2](../assets/edaf3c9f9328ae2b2d181261964b27781108bb62b7edb12540a9530585b390c4.png)  
+
+#### a. 每一个页表项占多少Byte
+
+![picture 3](../assets/7814d197e6ebd25d7c5d629d11688ae63a85c45336724f4f4523774d8f1d28d8.png)  
+
+> - 而页号不需要占存储空间——>因为页表项是连续存放，页号可以是隐含的（类比数组）
+
+![picture 4](../assets/4dd0e4f53701e2bef25c6494f9f0d283463f206a7310ebd940a7e9aa9efc6591.png)  
+![picture 5](../assets/807aa3762185a05989688b3e4c9fa091818d8d4274eac61bad100aa498f5f7d4.png)  
+
+#### b. 如何实现地址的转换
+
+> - K位“页内偏移量”<——————>一个页面大小2**k个内存单元
+> - M位“页号”<——————>一个进程最多允许2**m个页面
+
+![picture 6](../assets/f075620e14389db91d616f8534e65e05eeebd2672bc745830c3e0142488d7f31.png)  
+![picture 7](../assets/6fbf7cd2da4e13e3658e857d17f02f341fbcb2bcf3d0e95c168281a2e5a8e245.png)  
+![picture 8](../assets/cc5022108f9f03670a84cbd8d9a4e8ac48628798afa0d6a1749ee47a78aeccea.png)  
+![picture 9](../assets/198bf0c2aee58c9f58d7c0aae978d83920a80e9c797d3bf71fd4d5facee09ce9.png)  
+
+#### c. 地址映射机构
+
+![picture 10](../assets/b9c04fe5ba7f49411e88700cc712e144e087bd9b1d9217aa23150c39c19d42e1.png)  
+![picture 11](../assets/b24d66f15975fffedce925c0c14ba1bfd39f75b594c1dffb5d9375d40a28d4dc.png)  
