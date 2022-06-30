@@ -161,3 +161,124 @@
 
 ![picture 10](../assets/b9c04fe5ba7f49411e88700cc712e144e087bd9b1d9217aa23150c39c19d42e1.png)  
 ![picture 11](../assets/b24d66f15975fffedce925c0c14ba1bfd39f75b594c1dffb5d9375d40a28d4dc.png)  
+
+#### d. 引入快表（联想存储器）地址映射机构
+
+> - 一种访问速度**快于内存**的`Cache`，内存中的页表称为**慢表**
+> - 如果命中少一次访存
+> - 局部性原理
+
+![picture 17](../assets/18a06218f74bf435bba7149972b4af53f15d876e3a0da59df5203dcede2759a8.png)  
+
+#### e. 两级页表
+##### 单级页表存在问题
+> - 所有页表项连续存放，因此页表很大时要占用很多页框
+> - 进程在一段时间内只需要访问某几个页面，没必要让整个页表常驻内存
+
+##### 两级页表地址结构
+![picture 1](../assets/abc2ee781bb93b96cbe06b1bb181769eefcb3ea66e232684c5e052fd7ba72134.png)  
+
+##### 另一种解决思路
+![picture 2](../assets/60ca10b7d44b720ad57b077edbbedae4c4ea9f4c21ba25f571fd1de0b7200fc4.png)  
+
+
+##### 各级页表大小不能超过一个页面
+![picture 3](../assets/05265eb86faa21e998ed8bf584bf358dc86d3c4582a4fabfc512c275f669cdfd.png)  
+
+##### 访存次数
+![picture 4](../assets/9adb31a8a9d4dac5facf673491f5cdc290375fa522ceb7d3f0b77af0b4785b44.png)  
+
+
+### 3.2.2 分段存储
+
+#### 分段
+
+![picture 5](../assets/800abd03d5de305d7ed1a87b1bc0a47939d2c12cd0d7da17a3b5d54cae3e8d58.png)  
+
+![picture 6](../assets/674b37865b1082e36886463ace3ba852331c71cb25cbe7816865a63c17e5f516.png)  
+
+#### 段表
+![picture 7](../assets/93c66196a6b3bab106ef88feaca6cb06057fccb71c2329f40280c83bed42487f.png)  
+
+#### 地址转换
+![picture 8](../assets/999054d1dddd3bd72acc763b78bd0259d92b07c661339e4d79b639df974517d3.png)  
+
+
+### 3.2.3 分页与分段
+> - 二维：既要给出段名，还要给出段内地址
+> - 一维：只需要给出一个记忆符
+
+![picture 9](../assets/023c240b0f997594c6e135ca9991e8b00bcada9f995c6dcb05d64f745c2c5b23.png)  
+
+### 3.2.4 段页式管理
+![picture 10](../assets/ed1ac1a08f6673a0f490ae5c80253767a73e6595b864333832e20117d9ad3adc.png)  
+
+![picture 11](../assets/f8be52c0f8bd5dbf71b0343ab81c2890b7428b9722f352827873672d57698f4f.png)  
+
+![picture 12](../assets/271ccd8eed802a123aadbcbdbd15902c6db14be6888e2361e7e2d071a49af70b.png)  
+
+
+# 4. 虚拟存储（内存空间扩充）
+## 4.1 传统存储管理缺点
+![picture 13](../assets/5b84431b7f9daf839cf636582803cfb557ccba44b2fb3b15caa69e6117afd973.png)  
+
+## 4.2 局部性原理
+![picture 14](../assets/d339fa776f4935e8e83d2ae0dcb0a91cb29326f566ce8bafd072ef5230b07b0d.png)  
+
+## 4.3 虚拟内存的定义、特征、实现
+![picture 15](../assets/879e9657c8401f6c23cbc8f4be7035d1cf872bcea2597e0f41c0611dacccb8c6.png)  
+
+## 4.4 请求分页管理方式
+
+### a.页表
+
+> 为**请求换页**与**页面置换**增加字段
+
+![picture 16](../assets/6f88270ae44c7095ea4b0a4c879f9f4c604a33d212d927c59239781f6f29b425.png)  
+
+### b.缺页中断机构
+
+![picture 18](../assets/a9a5d655f0103e7bb851bc761154b8ff5022444f6d63f5b3aa01afb8e57b58b0.png)  
+
+![picture 17](../assets/93aae78a47ae363c262d3dce30208cf91387bcd58ea186400548dddf5fca7560.png)  
+
+
+### c.地址变换
+![picture 19](../assets/bc8604687f63858cd1f9c598835cddb120c84864e880e07a15d9a735e8028d86.png)  
+![picture 20](../assets/52e030482a111a8b67ba50bb96cae4ff146371f8ce5de4b5f13649b19f5526ee.png)  
+
+## 4.5 页面置换算法
+### a. 最佳置换算法(`OPT`)
+> - **在以后最久不会被使用的页面**
+> - 理想算法，无法实现
+![picture 22](../assets/c20e2c3a8bae9e75d749e26a71f16a2dfba2c016e535068e63aa4b52cb6efdcf.png)  
+
+### b. 先进先出页面置换算法(`FIFO`)
+> **Belady异常**，算法**性能差**
+
+
+![picture 24](../assets/ff34bff6e2eea00c1a17411a8bfed4f87c0f097bff63920239229ee3687be4e8.png)  
+
+![picture 23](../assets/08ad53b7b3c2b9fb333b22906a1ecf9763f5809dca015a842e440672ba61736a.png)  
+
+
+### c. 最近最久未使用(`LRU`)
+![picture 25](../assets/16eb4718ecfd7589c0b1a6104d6c4011f71507f8c0b55f6e117ec1582f221630.png)  
+
+
+### d. 时钟置换算法(`CLOCK`)
+
+![picture 26](../assets/f19feabe1dd1fc1475917c9346bc69cb46db2b0d22f0adaf231cdfdfb232bde7.png)  
+
+
+# 5. 分配置换策略
+## 5.1 驻留集
+![picture 27](../assets/fa099e514286d9715f190e91a843f0b3d1cbe97fee5a51030cde3994185ef639.png)  
+
+## 5.2 抖动
+![picture 28](../assets/533104798e1b8c5a77296ae864f245c275a0703dc261019ef7c4f3faad5a445c.png)  
+
+## 5.3 页面分配策略
+
+![picture 29](../assets/ac00d0886bbd6f3e5424491d9bfe2ed8bc7f992beccedc3390b9bb383d0effc0.png)  
+![picture 30](../assets/b8d69398d84f15a148a8647737e6070663d46ad0571a97eff1c37ccfc194a074.png)  
