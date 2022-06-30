@@ -155,3 +155,161 @@
 ### c.多对多模型
 
 ![picture 17](../assets/f6f682f0529a09ab07095dec325bb020ac3b1dfd3e041832fc537ab2367698d6.png)  
+
+
+# 5. 进程调度
+
+## 5.1 三个层次
+![picture 1](../assets/054a172e3bcb357ca44fa628d7188fe9e640ee82db9cdca0602231b819532422.png)  
+
+
+## 5.2 七状态模型（由中级调度扩充）
+
+> - 挂起与阻塞的异同
+>   - 同：都是暂时不能获得`CPU`服务
+>   - 异：挂起的进程映像是放在外存，而阻塞的进程映像是在内存
+
+![picture 2](../assets/42672ba161cfc903ad1f0263eb4a69e0a4951f872b1491aa26abe0261d7697ae.png)  
+
+## 5.3 调度的时机与方式
+
+### a.时机
+![picture 3](../assets/5a6bc98dbafef78f8b1c1fe903547b86999d7aeba7affb8cccaa70ea73dddaa2.png)  
+![picture 4](../assets/4be79eed8d15ff0b7c2ad32700da1d625577e011fcab48eb2407fbca3cbbba73.png)  \
+
+### b.方式
+![picture 5](../assets/1ae073124b094ad829df7e7cde21b6968c8a5e944531fa0e4b8ec35456d4a882.png)  
+
+## 5.4 调度性能指标
+
+![picture 6](../assets/1c6093de07e4602f1e00ee92cf3faba491fbd8ea99aec23d806877930d0eac3f.png)  
+
+
+
+## 5.5 调度算法
+
+### a. 先来先服务（`FCFS`）
+![picture 8](../assets/46b337ac994fd5f48ecf47db7e5428d194fe525bace97d56ae302ebad02fc3e5.png)  
+
+![picture 7](../assets/8eef963aff8ac50dcf09ec57c72383d111111b4fff4d11b7464a4548f62824eb.png)  
+
+### b.短作业优先（`SJF`）与最短剩余时间优先（`SRTN`）
+> 所有进程同时可运行时，**平均等待时间与平均周转时间最少**
+
+![picture 12](../assets/5043a49ff5ac0fe2e4b049e8b2004441826657ac2d8cec5694f2fa8b79735c26.png)  
+
+
+![picture 9](../assets/1054511575638a26f74dd0e49673dfd5812e18df444269f4205663ce900aaa40.png)  
+
+![picture 10](../assets/1a657b8b56d779fd7549d2cec9d83c88aef156885b29bd27d1dfdbaccf52463f.png)  
+![picture 13](../assets/f42ae8b99212b890adf8cd6f872280db1c229cfd8b412bf0fe1adf0b5eba31cd.png)  
+
+
+### c.高响应比优先（`HRRN`）
+![picture 14](../assets/151c795490b776f506457a4fbd17dd3b080af197c4eab8227ac9169b3d33b9e3.png)  
+
+![picture 15](../assets/cbe2f040a3fbe96ef6effe411dcd0483bcd8ef3fd3ca504d7d1e87a101c326ca.png)  
+
+
+### D.=======分割线=======总结=======
+
+
+![picture 16](../assets/f2dbdf7c1edc336e2ba5e19400b536c6e85e16e8abe99829fc3450a672b2ae99.png)  
+
+
+### e. 时间片轮转（`RR`）
+
+> - **时间片太大，退化为先来先服务**
+> - 时间片太小，进程切换频繁，一般让进程切换的开销占比不超1%
+
+![picture 19](../assets/47ec79dd5ac10ffc6ca9360111df7605e8024d030fd980e366aaf3ee35399cf3.png)  
+
+
+![picture 17](../assets/eb5fda9eeb6c9e7b05cf7ac23ad340e4d3c3ccd4c82dcefa154055c60288b1c1.png)  
+![picture 18](../assets/e504a928ed28e433e0560e6e06d0a33430274db5985dfa4f5bab96cc31bdcad4.png)  
+
+
+### f. 优先级
+![picture 22](../assets/d0986aefdb6057eedff7b455641ea3d5a773fc64b1da77e7a6a640223e8c3d33.png)  
+
+![picture 21](../assets/d1e4f1ea8c8f5ca80857a80dedeacf8c64086a2432f179abfaf270aeaebac6e8.png)  
+
+![picture 23](../assets/a004526ad5af9ab794016028e6df88905f4995aecafd378b2139e2e1f92c2136.png)  
+
+![picture 20](../assets/2c042eabc918ef097a449fd34d169a5a785687e290596babf8eaf8e869da50a2.png)  
+
+### g. 多级反馈队列
+
+![picture 24](../assets/0df13b3cc1f9df4359ac804cd6d83cce8b75e3959be927b07104e16c9f5da836.png)  
+![picture 25](../assets/84708a9a70baac6bd45e576c923bbad7a719feb510a4fe023f91eea9b7a4d8ce.png)  
+
+# 6. 进程通信
+
+![picture 1](../assets/a77e985f5a43f2180e728aba5709a315ac68bf6af91f9b807d934cf10e582547.png)  
+
+# 7. 死锁
+
+## 7.1 概念
+
+> - **并发环境下**，各进程因竞争资源而导致**互相等待对方手里的资源**，导致各进程都**阻塞**
+
+## 7.2 死锁、饥饿、死循环的区别
+> - 死锁：**各**进程都**等待对方资源**而阻塞，而无法向前推进，**阻塞态**
+>   - 管理者`OS`的问题
+> - 饥饿：**某**进程**长期得不到资源**而无法向前推进，**阻塞态**或**就绪态**
+>   - 管理者`OS`的问题
+> - 死循环：某进程**执行过程中一直跳不出某个循环**的现象，可以是**运行态**
+>   - 代码、被管理者的问题
+
+## 7.3 死锁条件
+> - 互斥条件
+>   - 一个资源在某一时刻只能分配给一个进程
+> - 非剥夺条件
+>   - 已分配给进程的资源只能被占有者自行释放
+> - 请求与保持条件
+>   - 进程在占用部分资源后，运行时还可以申请其余的资源，而且在申请其余资源时**并不释放已占用的资源**
+> - 循环等待条件
+>   - 系统中存在着一条由两个或两个以上的进程组成的循环链
+>   - 但是**发生循环等待不一定死锁**，是**必要不充分**条件
+
+
+## 7.4 死锁的处理策略
+> - 预防死锁
+>   - 破坏死锁产生的四个必要条件中的一个或几个
+> - 避免死锁
+>   - 通过某种算法防止系统进入不安全状态
+> - 死锁的检测和解除
+>   - 允许死锁发生，不过`OS`可以检测出死锁然后解除
+
+### 7.4.1 静态策略：预防死锁
+
+![picture 4](../assets/ac49f73c354122d68f4df2f84c053582e6d5d33a812b905e0451c791ffc26b59.png)  
+
+![picture 3](../assets/ab0a44ba9134b99a11b210b9c525ed1e44b1b0d1e2182aa259a0dfac24c7e046.png)  
+![picture 5](../assets/1dbefc3826eda4d4aef62971242f9a2b0e6654a7fe2a90c4a4bd19cf22faba88.png)  
+
+### 7.4.2 动态策略：避免死锁
+
+#### a. 安全序列
+![picture 7](../assets/ab55e14dec8fedbc1427f1cfd5d135ac39dcb979918ee33762025b7495259879.png)  
+![picture 8](../assets/a041c18de8ccc69ebe3f1989320fb5d24dda34ef1cf54352de570f515c6e3577.png)  
+
+#### b. 银行家算法
+
+![picture 9](../assets/d4a962edafaccedf84433694eb07cf4663e2ffd63cc810509729c3b9138d1a69.png)  
+![picture 10](../assets/18129d7cfe2b9d3c6b6615db1ab6f893a1a2eb6e83e34fe5e82ad1c7d230e3af.png)  
+
+![picture 11](../assets/ba5295ba4630e5e83d99bafc1c70445de001b8b4ef6fc1fb658afea796d1360c.png)  
+
+![picture 12](../assets/e5fda8ce9a5139d220c6477126b4f17232f234fab59d092039acf906278aa07c.png)  
+
+
+### 7.4.3 死锁的检测和解除
+#### a.死锁的检测
+![picture 13](../assets/b13c9f85e8c4e24753e037da959bfa0d2a61078e2ef0a38741962d471694bd01.png)  
+![picture 14](../assets/45cfd4e61b8504d1bf4fcadd338582de0bfc8a757dff48bbdf564d8c96bc063d.png)  
+
+#### b.死锁的解除
+
+![picture 15](../assets/4aefa601a3857d66254d3760f4aa851663c46d1c8becddf19a0eb5b734e12c20.png)  
+![picture 16](../assets/ecbbed2422b6aa8f47d0d24a56987d9b0805b7eee39acee6937ebcfde4fdaacb.png)  
